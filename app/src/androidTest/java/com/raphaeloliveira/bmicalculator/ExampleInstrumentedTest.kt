@@ -1,4 +1,4 @@
-package com.example.bmicalculator
+package com.raphaeloliveira.bmicalculator
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
