@@ -30,10 +30,7 @@ class MainActivity : AppCompatActivity() {
 
 
                 val intent = Intent(this, ResultActivity::class.java)
-                    .apply {
-                        putExtra("EXTRA_RESULT", imc)
-                    }
-
+                intent.putExtra("KEY_RESULT", imc)
                 startActivity(intent)
 
             } else {
