@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
-    <string name="message_classificacao">Classificaçāo: %1$s!</string>
+    <string name="message_classification">%1$s !</string>
     <string name="enter_height">Enter your height. ex: 1.23</string>
     <string name="enter_weight">Enter your weight. ex: 12.34</string>
     <string name="calculate">Calculate</string>
