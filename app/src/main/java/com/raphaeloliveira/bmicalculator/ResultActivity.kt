@@ -5,6 +5,8 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.raphaeloliveira.bmicalculator.databinding.ActivityResultBinding
 
+const val KEY_RESULT = "ResultActivity.EXTRA_RESULT"
+
 class ResultActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityResultBinding
@@ -14,12 +16,11 @@ class ResultActivity : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val result = intent.getFloatExtra("EXTRA_RESULT", 0.1f)
-        val imcformatado = String.format("%.2f" , result)
+        val result = intent.getFloatExtra("KEY_RESULT", 0f)
 
-        binding.textviewResult.text = imcformatado
+        binding.tvResult.text = result.toString()
 
-        val classificacao = if(result < 18.5f) {
+        val classification = if(result < 18.5f) {
             "ABAIXO DO PESO"
         }else if(result in 18.5f..24.9f){
             "NORMAL"
@@ -31,7 +32,7 @@ class ResultActivity : AppCompatActivity() {
             "OBESIDADE GRAVE"
         }
 
-        binding.textviewClassificacao.text = getString(R.string.message_classificacao, classificacao)
+        binding.tvClassification.text = getString(R.string.message_classification, classification)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
