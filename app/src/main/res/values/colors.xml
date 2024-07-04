@@ -10,4 +10,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_500">#293FCF</color>
     <color name="blue_200">#1DC5F8</color>
+    <color name="colorUnderWeight">#FF0000</color>
+    <color name="colorNormal">#00FF00</color>
+    <color name="colorOverWeight">#FFFF00</color>
+    <color name="colorObesity">#FF0000</color>
+    <color name="colorSevereObesity">#FF0000</color>
 </resources>
