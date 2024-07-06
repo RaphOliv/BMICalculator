@@ -15,4 +15,5 @@
     <color name="colorOverWeight">#FFFF00</color>
     <color name="colorObesity">#FF0000</color>
     <color name="colorSevereObesity">#FF0000</color>
+    <color name="colorAccent">#FF000000</color>
 </resources>
