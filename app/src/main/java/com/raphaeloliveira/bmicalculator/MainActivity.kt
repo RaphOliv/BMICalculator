@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-            binding.btnCalcular.setOnClickListener {
+            binding.btnCalcule.setOnClickListener {
 
             val alturaStr = binding.edittextAltura.text.toString()
             val pesoStr = binding.edittextPeso.text.toString()
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
 
                 val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra("KEY_RESULT", imc)
+                intent.putExtra(Constants.KEY_RESULT, imc)
                 startActivity(intent)
 
             } else {
