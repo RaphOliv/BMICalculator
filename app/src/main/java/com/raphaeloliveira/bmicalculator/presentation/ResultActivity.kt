@@ -1,10 +1,12 @@
-package com.raphaeloliveira.bmicalculator
+package com.raphaeloliveira.bmicalculator.presentation
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.raphaeloliveira.bmicalculator.R
 import com.raphaeloliveira.bmicalculator.databinding.ActivityResultBinding
+import com.raphaeloliveira.bmicalculator.util.Constants
 
 class ResultActivity : AppCompatActivity() {
 

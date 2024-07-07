@@ -1,10 +1,11 @@
-package com.raphaeloliveira.bmicalculator
+package com.raphaeloliveira.bmicalculator.presentation
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.raphaeloliveira.bmicalculator.databinding.ActivityMainBinding
+import com.raphaeloliveira.bmicalculator.util.Constants
 
 class MainActivity : AppCompatActivity() {
 
