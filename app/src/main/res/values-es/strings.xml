@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora IMC</string>
+    <string name="enter_height">Introduzca su peso. p. ej. 1.23</string>
+    <string name="enter_weight">Introduzca su altura. p.ej. 12.34</string>
+    <string name="calculate">Calcule</string>
+    <string name="bmi_calculator">Calculadora IMC</string>
+    <string name="description_header">Introduce su peso y altura para calcular tu IMC</string>
+    <string name="check_bmi">Comprueba a continuación el resultado y la clasificación de su IMC:</string>
+    <string name="your_classification">Su clasificación es:</string>
+    <string name="underweight">PESO INFERIOR</string>
+    <string name="healthyweight">PESO IDEAL</string>
+    <string name="overweight">SOBREPESO</string>
+    <string name="obesity">OBESIDAD</string>
+    <string name="severe_obesity">OBESIDAD GRAVE</string>
+</resources>

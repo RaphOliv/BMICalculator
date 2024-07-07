@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
-    <string name="message_classification">%1$s !</string>
     <string name="enter_height">Enter your height. ex: 1.23</string>
     <string name="enter_weight">Enter your weight. ex: 12.34</string>
     <string name="calculate">Calculate</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="description_header">Enter your weight and height to calculate your BMI</string>
+    <string name="check_bmi">Check your BMI and classification here:</string>
+    <string name="your_classification">Your classification is:</string>
+    <string name="underweight">UNDERWEIGHT</string>
+    <string name="healthyweight">HEALTHY WEIGHT</string>
+    <string name="overweight">OVERWEIGHT</string>
+    <string name="obesity">OBESITY</string>
+    <string name="severe_obesity">SEVERE OBESITY</string>
 </resources>
