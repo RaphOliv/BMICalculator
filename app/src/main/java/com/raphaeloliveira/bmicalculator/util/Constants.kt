@@ -1,4 +1,4 @@
-package com.raphaeloliveira.bmicalculator
+package com.raphaeloliveira.bmicalculator.util
 
 class Constants {
     companion object {

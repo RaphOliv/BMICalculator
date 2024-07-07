@@ -1,4 +1,4 @@
-package com.raphaeloliveira.bmicalculator
+package com.raphaeloliveira.bmicalculator.presentation
 
 import android.content.Context
 import android.graphics.Canvas
