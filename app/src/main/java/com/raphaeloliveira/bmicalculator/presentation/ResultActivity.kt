@@ -20,7 +20,7 @@ class ResultActivity : AppCompatActivity() {
     val result = intent.getFloatExtra(Constants.KEY_RESULT, 0f)
 
     binding.tvResult.text = result.toString()
-    binding.bmiIndicatorView.imcValue(result)
+    binding.bmiIndicatorView.bmiValue(result)
 
     val classificationText = when {
         result < 18.5f -> getString(R.string.underweight)
