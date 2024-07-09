@@ -69,7 +69,7 @@
 
     </LinearLayout>
 
-    <com.raphaeloliveira.bmicalculator.BmiIndicatorView
+    <com.raphaeloliveira.bmicalculator.presentation.BmiIndicatorView
         android:id="@+id/bmiIndicatorView"
         android:layout_width="397dp"
         android:layout_height="270dp"
