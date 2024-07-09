@@ -14,7 +14,7 @@ class BmiIndicatorView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
-    var imcValue: Float = 0f
+    var bmiValue: Float = 0f
     set(value) {
         field = value
         invalidate()
@@ -62,11 +62,11 @@ class BmiIndicatorView @JvmOverloads constructor(
 
     private fun drawPointer(canvas: Canvas, centerX: Float, centerY: Float, radius: Float) {
         var angle = when {
-            imcValue <= 18.5f -> mapValue(imcValue, 0f, 18.5f, 180f, 216f)
-            imcValue <= 25f -> mapValue(imcValue, 18.5f, 25f, 216f, 252f)
-            imcValue <= 30f -> mapValue(imcValue, 25f, 30f, 252f, 288f)
-            imcValue <= 40f -> mapValue(imcValue, 30f, 40f, 288f, 324f)
-            else -> mapValue(imcValue, 40f, 50f, 324f, 360f)
+            bmiValue <= 18.5f -> mapValue(bmiValue, 0f, 18.5f, 180f, 216f)
+            bmiValue <= 25f -> mapValue(bmiValue, 18.5f, 25f, 216f, 252f)
+            bmiValue <= 30f -> mapValue(bmiValue, 25f, 30f, 252f, 288f)
+            bmiValue <= 40f -> mapValue(bmiValue, 30f, 40f, 288f, 324f)
+            else -> mapValue(bmiValue, 40f, 50f, 324f, 360f)
         }
 
         angle = angle.coerceAtMost(360f)
@@ -110,7 +110,7 @@ class BmiIndicatorView @JvmOverloads constructor(
         return toLow + (value - fromLow) * (toHigh - toLow) / (fromHigh - fromLow)
     }
 
-    fun imcValue(result: Float) {
-        imcValue = result
+    fun bmiValue(result: Float) {
+        bmiValue = result
     }
 }
