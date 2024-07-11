@@ -59,6 +59,7 @@ android {
         buildConfig = true
         viewBinding = true
     }
+    ndkVersion = "27.0.11902837 rc2"
 }
 
 dependencies {
@@ -70,6 +71,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation ("androidx.core:core-splashscreen:1.0.1")
+
+    implementation ("io.insert-koin:koin-android:3.1.3")
 
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
@@ -82,4 +86,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    testImplementation("androidx.room:room-testing:$room_version")
 }
