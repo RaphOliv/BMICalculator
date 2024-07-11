@@ -13,4 +13,8 @@
     <string name="overweight">SOBREPESO</string>
     <string name="obesity">OBESIDAD</string>
     <string name="severe_obesity">OBESIDAD GRAVE</string>
+    <string name="bmi_history">BMI</string>
+    <string name="history_title">History</string>
+    <string name="your_history">Your history</string>
+    <string name="history_deleted">History deleted</string>
 </resources>
