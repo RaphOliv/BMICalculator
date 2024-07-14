@@ -17,14 +17,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/ic_weight"
-            app:tint="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_weight"
+                app:tint="@color/white" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_history"
+                app:drawableTint="@color/white"
+                android:text="@string/your_history"
+                android:textSize="11sp"
+                app:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -50,7 +76,7 @@
     </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tl_peso"
+        android:id="@+id/tl_weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -62,13 +88,15 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edittext_peso"
+            android:id="@+id/et_weight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
             android:drawableEnd="@drawable/ic_weight_kg"
             android:fontFamily="@font/acme"
             android:hint="@string/enter_weight"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
             android:inputType="numberDecimal"
             android:maxLength="6" />
 
@@ -76,23 +104,25 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tl_altura"
+        android:id="@+id/tl_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:hintEnabled="false"
-        app:layout_constraintTop_toBottomOf="@+id/tl_peso"
+        app:layout_constraintTop_toBottomOf="@+id/tl_weight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edittext_altura"
+            android:id="@+id/et_height"
             android:drawableEnd="@drawable/ic_height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
-            android:layout_below="@+id/edittext_peso"
+            android:layout_below="@+id/et_weight"
             android:hint="@string/enter_height"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
             android:fontFamily="@font/acme"
             android:inputType="numberDecimal"
             android:maxLength="4"/>
@@ -100,7 +130,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnCalcule"
+        android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
