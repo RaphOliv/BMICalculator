@@ -75,6 +75,8 @@ dependencies {
 
     implementation ("io.insert-koin:koin-android:3.1.3")
 
+    implementation(libs.androidx.lifecycle.viewmodel.android)
+
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
