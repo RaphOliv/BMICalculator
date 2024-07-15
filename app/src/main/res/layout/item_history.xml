@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="2dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_history_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/shape_list">
+
+            <TextView
+                android:id="@+id/tv_classification_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_weight_history"
+                app:layout_constraintStart_toStartOf="@+id/tv_weight_history"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="HEALTHY WEIGHT" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_classification_history"
+                app:layout_constraintEnd_toStartOf="@+id/iv_delete"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/tv_bmi_history"
+                app:layout_constraintTop_toTopOf="@+id/tv_classification_history"
+                app:layout_constraintVertical_bias="1.0"
+                tools:text="10/07/2024" />
+
+            <TextView
+                android:id="@+id/tv_weight_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_weight_kg"
+                android:drawableTint="@color/white"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_height_history"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_classification_history"
+                tools:text="60" />
+
+            <TextView
+                android:id="@+id/tv_height_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawableEnd="@drawable/ic_height"
+                android:drawableTint="@color/white"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_weight_history"
+                app:layout_constraintEnd_toStartOf="@+id/tv_bmi_history"
+                app:layout_constraintStart_toEndOf="@+id/tv_weight_history"
+                app:layout_constraintTop_toTopOf="@+id/tv_weight_history"
+                tools:text="1.65" />
+
+            <TextView
+                android:id="@+id/tv_bmi_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_height_history"
+                app:layout_constraintEnd_toStartOf="@+id/tv_bmi"
+                app:layout_constraintStart_toEndOf="@+id/tv_height_history"
+                app:layout_constraintTop_toTopOf="@+id/tv_height_history"
+                tools:text="22.03" />
+
+            <TextView
+                android:id="@+id/tv_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:text="@string/bmi_history"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_bmi_history"
+                app:layout_constraintEnd_toStartOf="@+id/iv_delete"
+                app:layout_constraintStart_toEndOf="@+id/tv_bmi_history"
+                app:layout_constraintTop_toTopOf="@+id/tv_bmi_history" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_bmi"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.512" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
