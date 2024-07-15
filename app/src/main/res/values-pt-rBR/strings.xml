@@ -13,8 +13,11 @@
     <string name="overweight">ACIMA DO PESO</string>
     <string name="obesity">OBESIDADE</string>
     <string name="severe_obesity">OBESIDADE GRAVE</string>
-    <string name="bmi_history">BMI</string>
-    <string name="history_title">History</string>
-    <string name="your_history">Your history</string>
-    <string name="history_deleted">History deleted</string>
+    <string name="bmi_history">IMC</string>
+    <string name="history_title">Histórico</string>
+    <string name="your_history">Seu histórico</string>
+    <string name="history_deleted">Histórico apagado</string>
+    <string name="fill_fields">Preencha todos os campos.</string>
+    <string name="description_history">Para monitorar seus diferentes resultados de IMC com variações de peso, você pode visualizar seu histórico aqui.</string>
+    <string name="app_splash_title">Calculadora IMC</string>
 </resources>

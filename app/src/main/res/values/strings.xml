@@ -16,4 +16,7 @@
     <string name="history_title">History</string>
     <string name="your_history">Your history</string>
     <string name="history_deleted">History deleted</string>
+    <string name="fill_fields">Fill in all the fields.</string>
+    <string name="description_history">To monitor your different BMI results with weight variations, you can view your history here.</string>
+    <string name="app_splash_title">BMI Calculator</string>
 </resources>
