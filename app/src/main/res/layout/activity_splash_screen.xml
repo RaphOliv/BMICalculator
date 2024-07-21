@@ -12,20 +12,11 @@
         android:id="@+id/iv_logo_bmicalculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="250dp"
-        android:maxHeight="250dp"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         android:contentDescription="@null"
         android:src="@drawable/ic_logo_bmi" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/app_splash_title"
-        android:textSize="36sp"
-        android:textColor="#FFFFFF"
-        android:fontFamily="@font/acme" />
 
 </LinearLayout>
