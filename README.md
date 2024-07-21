@@ -1,12 +1,9 @@
-![license][license-url]
 ![kotlin][language-url]
 ![repo size][reposize-url]
 ![release][release-url]
 
 
 
-
-[license-url]: https://img.shields.io/github/license/RaphOliv/BMICalculator
 [language-url]: https://img.shields.io/github/languages/top/RaphOliv/BMICalculator
 [reposize-url]: https://img.shields.io/github/repo-size/RaphOliv/BMICalculator
 [release-url]: https://img.shields.io/github/v/release/RaphOliv/BMICalculator
