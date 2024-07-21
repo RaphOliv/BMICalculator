@@ -8,38 +8,69 @@
 [reposize-url]: https://img.shields.io/github/repo-size/RaphOliv/BMICalculator
 [release-url]: https://img.shields.io/github/v/release/RaphOliv/BMICalculator
 
-# BMI Calculator
-This project is a native Android application developed using the Kotlin programming language. Its main function is to calculate BMI and display the result on the next screen.
-
-The BMI calculator was an application I developed to take my first steps with Android development. I took part in the 10D challenge in the DevSpace community and managed to get out of ZERO.
-
-## :camera_flash: Screenshots
-### Mode Light
-<!-- You can add more screenshots here if you like -->
-
-<img src="/result/image1.png" width="260">&emsp;<img src="/result/image2.png" width="260">&emsp;<img src="/result/image3.png" width="260">
-
-### Mode Dark
-
-<img src="/result/image4.png" width="260">&emsp;<img src="/result/image5.png" width="260">
+## BMI Calculator
 
 ## Knowledge Stack
 * Kotlin 100%
-* Activity for display hosts 
+* MVVM Clean Architecture with Use Case
+* Room Database
+* View Model
+* Koin Dependency Injection
+* Activity for display hosts
+* Splash Screen
+* Indicator View
+* LayoutInflater
 * ViewGroup
-    * RelativeLayout
+    * RecyclerView
+    * CardView
+    * ConstraintsLayout
     * LinearLayout
-* UI components
+* UI components 
+    * TextInput
+    * ImageView
     * TextView
     * EditText
     * Button
 * Toast message provides simple feedback
 * Explicit Intent to open the second Activity
-* FindViewById to access UI components
-* String resource to concatenate texts
+* ViewBinding to access UI components
+* String resource to translations into portuguese 🇧🇷 and spanish 🇪🇸
 
 ## TODO
-* Improve UI/UX design
+* Release in App in Google Play Store 🤖
+
+# BMI Calculator
+
+The **BMI Calculator** app is an advanced and intuitive tool designed to help users monitor and manage their body health through the calculation of the Body Mass Index (BMI). With an interactive and user-friendly interface, the app provides precise and instantaneous results, allowing users to better understand their physical condition and track their changes over time.
+
+## Key Features
+
+### 1. **BMI Calculation**
+The primary feature of the BMI Calculator is its ability to calculate BMI quickly and accurately. Users simply need to enter their weight and height, and the app performs the calculation automatically. BMI is a globally recognised indicator used to assess whether a person is underweight, at an ideal weight, overweight, or obese.
+
+### 2. **BMI Classification**
+After calculating the BMI, the app displays the corresponding classification according to the World Health Organization (WHO) guidelines. The categories include:
+- Underweight (BMI < 18.5)
+- Healthy weight (BMI between 18.5 and 24.9)
+- Overweight (BMI between 25 and 29.9)
+- Obesity (BMI between 30 and 39.9)
+- Obesity severy (BMI ≥ 40)
+
+### 3. **Interactive Indicator**
+One of the standout features of the BMI Calculator is the interactive indicator that accompanies each result. This visually appealing feature not only shows the user's BMI classification but also highlights where they fall on the BMI scale. This immediate and clear feedback allows users to better understand their physical condition and make informed health decisions.
+
+### 4. **Results History**
+The app allows each BMI result to be saved in a personal history. This enables users to compare their weight and BMI measurements over time. The history is presented in an organised manner, which includes graphs and tables showing the user's weight and BMI progression. This way, users can identify trends, adjust their diet and exercise routines as necessary, and achieve their health goals.
+
+## Additional Benefits
+
+- **User-Friendly Interface:** The BMI Calculator is designed with a clean and intuitive interface, making the app easy and enjoyable to use for people of all ages.
+- **Privacy and Security:** All data stored in the app is protected and remains solely on the user’s device, ensuring the privacy of the user’s information.
+- **Compatibility:** The app is compatible with a wide range of devices, including smartphones and tablets, allowing users to calculate and monitor their BMI wherever they are.
+
+## Conclusion
+
+The **BMI Calculator** is more than just a simple BMI calculator; it is an essential tool for those who want to track and improve their body health. With its precise calculation functionalities, detailed classification, interactive indicators, and comprehensive results history, the app provides everything users need to maintain effective control over their weight and BMI. Whether tracking changes over time or obtaining an immediate view of current health status, the BMI Calculator is the ideal choice for anyone interested in maintaining a healthy and balanced lifestyle.
 
 ## Author
 Raphael Oliveira (follow me on [LinkedIn](https://www.linkedin.com/in/raphael-oliveira-191b44b9))
