@@ -1,5 +1,6 @@
 package com.raphaeloliveira.bmicalculator.presentation
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AnimationUtils
@@ -7,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.raphaeloliveira.bmicalculator.R
 import com.raphaeloliveira.bmicalculator.databinding.ActivitySplashScreenBinding
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashScreenBinding
