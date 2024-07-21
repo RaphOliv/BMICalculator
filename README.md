@@ -1,4 +1,17 @@
-# Calculadora IMC/BMI
+![license][license-url]
+![kotlin][language-url]
+![repo size][reposize-url]
+![release][release-url]
+
+
+
+
+[license-url]: https://img.shields.io/github/license/RaphOliv/BMICalculator
+[language-url]: https://img.shields.io/github/languages/top/RaphOliv/BMICalculator
+[reposize-url]: https://img.shields.io/github/repo-size/RaphOliv/BMICalculator
+[release-url]: https://img.shields.io/github/v/release/RaphOliv/BMICalculator
+
+# BMI Calculator
 This project is a native Android application developed using the Kotlin programming language. Its main function is to calculate BMI and display the result on the next screen.
 
 The BMI calculator was an application I developed to take my first steps with Android development. I took part in the 10D challenge in the DevSpace community and managed to get out of ZERO.
