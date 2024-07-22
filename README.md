@@ -8,6 +8,10 @@
 [reposize-url]: https://img.shields.io/github/repo-size/RaphOliv/BMICalculator
 [release-url]: https://img.shields.io/github/v/release/RaphOliv/BMICalculator
 
+<div align="center">
+   <img width="1440" alt="Screenshot 2024-07-22 at 19 14 17" src="https://github.com/user-attachments/assets/5d491433-fbf0-4ab2-bd8b-1dac71df2434">
+</div>
+
 ## BMI Calculator
 
 ## Knowledge Stack
