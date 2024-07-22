@@ -41,7 +41,7 @@
 * String resource to translations into portuguese 🇧🇷 and spanish 🇪🇸
 
 ## TODO
-* Release in App in Google Play Store 🤖
+* App release in Google Play Store 🤖
 
 # BMI Calculator
 
